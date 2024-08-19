@@ -1,90 +1,51 @@
 {
-	"folders": [
-		{
-			"path": "./"
-		}
-	],
-	"settings": {
-		"[Log]": {
-			"editor.fontSize": 14
-		},
-		"files.exclude": {
-			".git": true,
-			".github": true,
-			".vscode": true,
-			"node_modules": true
-		},
-		"search.exclude": {
-			".git": true
-		},
-		"editor.wordWrap": "on",
-		"files.autoSaveDelay": 500,
-		"task.allowAutomaticTasks": "on",
-		"files.associations": {
-			"styleSettingsConfig.scss": "yaml",
-			"MHS_styleSettings.scss": "yaml"
-		}
-	},
-	"tasks": {
-		"version": "2.0.0",
-		"tasks": [
-			{
-				"label": "Prism - Dev Theme",
-				"type": "shell",
-				"command": "npm run devTheme",
-				"group": {
-					"kind": "build",
-					"isDefault": true
-				},
-				"runOptions": {
-					"runOn": "folderOpen"
-				}
-			},
-			{
-				"label": "Prism - Build Theme",
-				"type": "shell",
-				"command": "npm run buildTheme",
-				"group": {
-					"kind": "build",
-					"isDefault": true
-				}
-			},
-			{
-				"label": "Prism - Dev MHS Snippet",
-				"type": "shell",
-				"command": "npm run devSnipMHS",
-				"group": {
-					"kind": "build",
-					"isDefault": true
-				}
-			},
-			{
-				"label": "Prism - Build MHS Snippet",
-				"type": "shell",
-				"command": "npm run buildSnipMHS",
-				"group": {
-					"kind": "build",
-					"isDefault": true
-				}
-			},
-			{
-				"label": "Prism - Dev C Snippet",
-				"type": "shell",
-				"command": "npm run devSnipC",
-				"group": {
-					"kind": "build",
-					"isDefault": true
-				}
-			},
-			{
-				"label": "Prism - Build C Snippet",
-				"type": "shell",
-				"command": "npm run buildSnipC",
-				"group": {
-					"kind": "build",
-					"isDefault": true
-				}
-			}
-		]
-	}
+  "folders": [
+    {
+      "path": "./"
+    }
+  ],
+  "settings": {
+    "[Log]": {
+      "editor.fontSize": 14
+    },
+    "files.exclude": {
+      ".git": true,
+      ".github": true,
+      ".vscode": true,
+      "node_modules": true
+    },
+    "search.exclude": {
+      ".git": true
+    },
+    "editor.wordWrap": "on",
+    "files.autoSaveDelay": 500,
+    "task.allowAutomaticTasks": "on",
+    "files.associations": {
+      "styleSettingsConfig.scss": "yaml",
+      "MHS_styleSettings.scss": "yaml"
+    }
+  },
+  "tasks": {
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Prism - Build Publish Theme",
+        "type": "shell",
+        "command": "npm run buildPublishTheme",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      },
+      {
+        "label": "Prism - Build Theme",
+        "type": "shell",
+        "command": "npm run buildTheme",
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        }
+      }
+    ]
+  }
 }

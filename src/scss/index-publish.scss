@@ -1,11 +1,14 @@
 @use "Info/licence.scss";
 
+// Publish Variables
+@use "Publish/index.scss";
+
 // Color Schemes
 @use "Color Schemes/colorSchemeBird.scss";
-@use "Color Schemes/colorSchemeCoffee.scss";
-@use "Color Schemes/colorSchemeFlower.scss";
-@use "Color Schemes/colorSchemeTree.scss";
-@use "Color Schemes/colorSchemeFruit.scss";
+// @use "Color Schemes/colorSchemeCoffee.scss";
+// @use "Color Schemes/colorSchemeFlower.scss";
+// @use "Color Schemes/colorSchemeTree.scss";
+// @use "Color Schemes/colorSchemeFruit.scss";
 
 // Setup
 @use "Fonts/fontFamilyImports.scss";
@@ -30,34 +33,31 @@
 @use "User Interface/popups.scss";
 
 // Accent Colors
-@use "User Interface/Accent Color/accentStyleBase.scss";
-@use "User Interface/Accent Color/accentStyleMinimal.scss";
-@use "User Interface/Accent Color/accentStylePlain.scss";
-@use "User Interface/Accent Color/accentStyleBorder.scss";
-@use "User Interface/Accent Color/accentStyleFilled.scss";
+// @use "User Interface/Accent Color/accentStyleBase.scss";
+// @use "User Interface/Accent Color/accentStyleMinimal.scss";
+// @use "User Interface/Accent Color/accentStylePlain.scss";
+// @use "User Interface/Accent Color/accentStyleBorder.scss";
+// @use "User Interface/Accent Color/accentStyleFilled.scss";
 @use "User Interface/Accent Color/accentStyleBorderAndFilled.scss";
 
 // Editor
 @use "Editor/editorStyling.scss";
 @use "Editor/callouts.scss";
-@use "Editor/progressBar.scss";
-@use "Editor/vim.scss";
+// @use "Editor/progressBar.scss";
+// @use "Editor/vim.scss";
 @use "Editor/properties.scss";
-
-// Publish
-
 
 // Core Plugins
 @use "Plugins/Core/audio.scss";
-@use "Plugins/Core/commandPalette.scss";
-@use "Plugins/Core/slashCommands.scss";
+// @use "Plugins/Core/commandPalette.scss";
+// @use "Plugins/Core/slashCommands.scss";
 @use "Plugins/Core/fileExplorer.scss";
 @use "Plugins/Core/graph.scss";
 @use "Plugins/Core/outline.scss";
 @use "Plugins/Core/search.scss";
 @use "Plugins/Core/tags.scss";
 @use "Plugins/Core/outgoingLinkBacklinks.scss";
-@use "Plugins/Core/canvas.scss";
+// @use "Plugins/Core/canvas.scss";
 @use "Plugins/Core/bookmarks.scss";
 @use "Plugins/Core/PDFViewer.scss";
 
@@ -65,8 +65,8 @@
 @use "Plugins/Theme/customVaultBanner.scss";
 @use "Plugins/Theme/markHighlightSystem.scss";
 @use "Plugins/Theme/fontFeatures.scss";
-@use "Plugins/Theme/focusedMode.scss";
-@use "Plugins/Theme/coloredFolders.scss";
+// @use "Plugins/Theme/focusedMode.scss";
+// @use "Plugins/Theme/coloredFolders.scss";
 
 // Community Plugins
 @use "Plugins/Community/styleSettings.scss";
@@ -74,22 +74,22 @@
 @use "Plugins/Community/iconFolder.scss";
 @use "Plugins/Community/icons.scss";
 @use "Plugins/Community/cMenu.scss";
-@use "Plugins/Community/calendar.scss";
-@use "Plugins/Community/recentFiles.scss";
-@use "Plugins/Community/danglingLinks.scss";
-@use "Plugins/Community/advancedTables.scss";
-@use "Plugins/Community/fileTreeAlternative.scss";
-@use "Plugins/Community/quietOutline.scss";
-@use "Plugins/Community/quickExplorer.scss";
-@use "Plugins/Community/tagFolder.scss";
-@use "Plugins/Community/mapView.scss";
-@use "Plugins/Community/dictionary.scss";
-@use "Plugins/Community/hoverEditor.scss";
-@use "Plugins/Community/emojiToolbar.scss";
-@use "Plugins/Community/jumpToDate.scss";
-@use "Plugins/Community/settingsSearch.scss";
-@use "Plugins/Community/dataLoom.scss";
-@use "Plugins/Community/noteToolbar.scss";
+// @use "Plugins/Community/calendar.scss";
+// @use "Plugins/Community/recentFiles.scss";
+// @use "Plugins/Community/danglingLinks.scss";
+// @use "Plugins/Community/advancedTables.scss";
+// @use "Plugins/Community/fileTreeAlternative.scss";
+// @use "Plugins/Community/quietOutline.scss";
+// @use "Plugins/Community/quickExplorer.scss";
+// @use "Plugins/Community/tagFolder.scss";
+// @use "Plugins/Community/mapView.scss";
+// @use "Plugins/Community/dictionary.scss";
+// @use "Plugins/Community/hoverEditor.scss";
+// @use "Plugins/Community/emojiToolbar.scss";
+// @use "Plugins/Community/jumpToDate.scss";
+// @use "Plugins/Community/settingsSearch.scss";
+// @use "Plugins/Community/dataLoom.scss";
+// @use "Plugins/Community/noteToolbar.scss";
 
 // Config Files
 @use "Info/styleSettingsConfig.scss";

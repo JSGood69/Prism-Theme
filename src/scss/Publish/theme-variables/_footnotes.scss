@@ -1,0 +1,22 @@
+// Publish Footnotes
+.footnote-link {
+    text-decoration: none;
+  }
+  .footnotes {
+    font-size: var(--footnote-size);
+  }
+  .footnote-ref {
+    vertical-align: super;
+  }
+  .footnote-backref {
+    display: inline-block;
+    margin-inline-start: var(--size-4-1);
+    color: var(--text-faint);
+    text-decoration: none;
+  }
+  @media (hover: hover) {
+    .footnote-backref:hover {
+      color: var(--text-accent);
+      text-decoration: none;
+    }
+  }

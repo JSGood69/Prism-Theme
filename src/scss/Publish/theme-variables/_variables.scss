@@ -1,0 +1,104 @@
+// publish varibles part 2
+iframe {
+    color-scheme: normal;
+  }
+  @media print {
+    .theme-dark {
+      --highlight-mix-blend-mode: darken;
+    }
+  }
+  * {
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overscroll-behavior: none;
+  }
+  body {
+    text-rendering: optimizeLegibility;
+    font-family: var(--font-interface);
+    line-height: var(--line-height-tight);
+    font-size: var(--font-ui-medium);
+    background-color: var(--background-primary);
+    color: var(--text-normal);
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  }
+  body.is-translucent {
+    background-color: transparent;
+  }
+  @keyframes node-inserted {
+    from {
+      outline-color: #fff;
+    }
+    to {
+      outline-color: #000;
+    }
+  }
+  .node-insert-event {
+    animation-duration: 0.01s;
+    animation-name: node-inserted;
+  }
+  .is-flashing {
+    transition: all 0.25s ease;
+    background-color: var(--text-highlight-bg) !important;
+    color: var(--text-normal);
+    mix-blend-mode: var(--highlight-mix-blend-mode);
+    border-radius: var(--radius-s);
+  }
+  @media print {
+    html,
+    body {
+      padding-top: 0 !important;
+      overflow: auto !important;
+      height: auto !important;
+    }
+    iframe,
+    .titlebar,
+    .app-container,
+    .progress-bar,
+    .popover,
+    .markdown-embed-link,
+    .suggestion-container {
+      display: none !important;
+    }
+    body > :not(.print) {
+      display: none !important;
+    }
+    .print .markdown-preview-view {
+      -webkit-print-color-adjust: exact;
+      color: initial;
+    }
+    .print .markdown-preview-view mark {
+      color: initial;
+    }
+    .print .markdown-preview-view .metadata-container {
+      display: none;
+    }
+    .print .markdown-preview-view .markdown-embed-content {
+      max-height: none;
+      overflow: visible;
+    }
+    .print .markdown-preview-view .callout-content {
+      display: inherit !important;
+    }
+    .print .external-link {
+      background: none;
+      padding-right: 0;
+    }
+    * {
+      text-shadow: none !important;
+    }
+    webview {
+      display: none;
+    }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+    body {
+      --font-text: var(--font-print) !important;
+    }
+  }

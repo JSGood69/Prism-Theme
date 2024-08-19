@@ -1,0 +1,21 @@
+// Audio
+audio {
+    outline: none;
+  }
+  .markdown-rendered audio {
+    max-width: 100%;
+    outline: none;
+  }
+  audio {
+    width: 100%;
+    height: 42px;
+  }
+  audio::-webkit-media-controls-enclosure {
+    border-radius: calc(var(--radius-m) - 1px);
+    border: 1px solid var(--background-modifier-border);
+    background-color: var(--background-primary-alt);
+  }
+  audio::-webkit-media-controls-current-time-display,
+  audio::-webkit-media-controls-time-remaining-display {
+    font-family: var(--font-interface);
+  }

@@ -4,4 +4,11 @@
 .env
 app.css
 appnew.css
-/dist
+/dist/
+src/scss/dist/
+
+src/scss/Color Schemes/dist/
+
+src/scss/Publish/theme-variables/dist/
+
+src/scss/Publish/dist/

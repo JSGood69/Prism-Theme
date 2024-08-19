@@ -6,12 +6,8 @@
   "license": "MIT",
   "homepage": "https://github.com/damiankorcz/Obsidian-Prism",
   "scripts": {
-    "devTheme": "sass --watch --no-charset --no-source-map --color \"src/scss/index.scss\" \"D:/Syncthing/Obsidian/Theme Test/.obsidian/themes/PrismDev.css\"",
-    "devSnipMHS": "sass --watch --no-charset --no-source-map --color \"src/snippets/Prism Mark Highlight System/MHS_index.scss\" \"D:/Syncthing/Obsidian/Theme Test/.obsidian/snippets/Prism Mark Highlight System.css\"",
-    "devSnipC": "sass --watch --no-charset --no-source-map --color \"src/snippets/Prism Callouts/C_index.scss\" \"D:/Syncthing/Obsidian/Theme Test/.obsidian/snippets/Prism Callouts.css\"",
-    "buildTheme": "node ./build/buildTheme.config.mjs",
-    "buildSnipMHS": "node ./build/buildSnipMHS.config.mjs",
-    "buildSnipC": "node ./build/buildSnipC.config.mjs"
+    "PublishTheme": "sass --watch --no-charset --color \"src/scss/index-publish.scss\" \"C:/Users/james/Obsidian/My Vaults/Published/publish.css\"",
+    "buildPublishTheme": "node ./build/buildPublishTheme.config.mjs"
   },
   "devDependencies": {
     "sass": "^1.77.2",
